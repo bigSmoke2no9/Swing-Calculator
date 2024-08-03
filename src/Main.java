@@ -404,11 +404,11 @@ public class Main extends JFrame implements ActionListener
         }
         catch(ArithmeticException ae)
         {
-            JOptionPane.showMessageDialog(this, "Can't Divide by Zero", "Error", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, ae.getMessage(), "Error", JOptionPane.WARNING_MESSAGE);
         }
         catch(IllegalArgumentException iae)
         {
-            JOptionPane.showMessageDialog(this, "Invalid operator", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, iae.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
